@@ -1,31 +1,31 @@
-import 'package:about_getx/getx_rotas/aula_1/pages/page1.dart';
-import 'package:about_getx/getx_rotas/aula_1/pages/page2.dart';
+import 'package:about_getx/getx_rotas/navegacao_comum/back/back_page.dart';
+import 'package:about_getx/getx_rotas/navegacao_comum/to/to_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class HomePageComum extends StatelessWidget {
+  const HomePageComum({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Page'),
+        title: const Text('Navegação Comum'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: const Text('Pagina um'),
+              child: const Text('TO (Push)'),
               onPressed: () {
-                Get.to(const Page1());
+                Get.to(const ToHomePage());
               },
             ),
             ElevatedButton(
-              child: const Text('Pagina Dois'),
+              child: const Text('Back'),
               onPressed: () {
-                Get.to(const Page2(),);
+                Get.to(const BackPage());
               },
             ),
           ],

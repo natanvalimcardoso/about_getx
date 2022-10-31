@@ -1,4 +1,4 @@
-import 'package:about_getx/getx_rotas/aula_1/pages/home_page.dart';
+import 'package:about_getx/getx_rotas/navegacao_comum/home_page_comum.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const HomePageComum(),
     );
   }
 }

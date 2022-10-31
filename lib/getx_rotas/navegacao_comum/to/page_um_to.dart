@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Page1 extends StatelessWidget {
+class PageUmTo extends StatelessWidget {
 
-  const Page1({ Key? key }) : super(key: key);
+  const PageUmTo({ Key? key }) : super(key: key);
 
    @override
    Widget build(BuildContext context) {
        return Scaffold(
-           appBar: AppBar(title: const Text('Pagina um'),),
+           appBar: AppBar(title: const Text('Pagina um TO'),),
            body: Container(),
        );
   }

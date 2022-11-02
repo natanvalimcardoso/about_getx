@@ -1,4 +1,4 @@
-import 'package:about_getx/getx_rotas/enviando_parametro/recebendo_arguments.dart';
+import 'package:about_getx/getx_rotas/rotas_comuns/arguments/recebendo_arguments.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

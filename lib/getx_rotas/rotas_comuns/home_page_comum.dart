@@ -1,10 +1,11 @@
-import 'package:about_getx/getx_rotas/enviando_parametro/enviando_arguments.dart';
-import 'package:about_getx/getx_rotas/offAll/offall_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'arguments/enviando_arguments.dart';
+import 'await_arguments/await_arguments_um.dart';
 import 'back/back_page.dart';
 import 'off/off_home_page.dart';
+import 'offAll/offall_home_page.dart';
 import 'to/to_home_page.dart';
 
 class HomePageComum extends StatelessWidget {
@@ -52,6 +53,15 @@ class HomePageComum extends StatelessWidget {
               child: const Text('Arguments'),
               onPressed: () {
                 Get.to(EnviandoArguments());
+              },
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green,
+              ),
+              child: const Text('Arguments Await'),
+              onPressed: () {
+                Get.to( const AwaitArgumentsUm());
               },
             ),
           ],

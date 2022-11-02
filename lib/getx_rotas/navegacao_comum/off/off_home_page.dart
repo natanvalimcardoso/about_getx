@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'off_page2.dart';
 
 class OffHomePage extends StatelessWidget {
   const OffHomePage({Key? key}) : super(key: key);
@@ -12,7 +15,9 @@ class OffHomePage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           child: const Text('Ir para pagina 2'),
-          onPressed: () {},
+          onPressed: () {
+             Get.to(const OffPage2());
+          },
         ),
       ),
     );

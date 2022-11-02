@@ -1,3 +1,4 @@
+import 'package:about_getx/getx_rotas/navegacao_comum/offAll/offall_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -34,6 +35,12 @@ class HomePageComum extends StatelessWidget {
               child: const Text('Off'),
               onPressed: () {
                 Get.to(const OffHomePage());
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Off All'),
+              onPressed: () {
+                Get.to(const OffAllHomePage());
               },
             ),
           ],

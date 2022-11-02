@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'off_page3.dart';
+import 'offall_page2.dart';
 
-class OffPage2 extends StatelessWidget {
-  const OffPage2({Key? key}) : super(key: key);
+class OffAllHomePage extends StatelessWidget {
+  const OffAllHomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('OF - pagina 2'),
+        title: const Text('OFAll - pagina 1'),
       ),
       body: Center(
         child: ElevatedButton(
-          child: const Text('Ir para pagina 3'),
+          child: const Text('Ir para pagina 2'),
           onPressed: () {
-            Get.off(const OffPage3()); 
+             Get.to(const OffAllPage2());
           },
         ),
       ),

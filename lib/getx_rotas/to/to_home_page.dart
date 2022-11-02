@@ -1,4 +1,4 @@
-import 'package:about_getx/getx_rotas/navegacao_comum/to/page_um_to.dart';
+import 'package:about_getx/getx_rotas/to/page_um_to.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

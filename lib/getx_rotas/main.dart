@@ -1,4 +1,4 @@
-import 'package:about_getx/getx_rotas/navegacao_comum/home_page_comum.dart';
+import 'package:about_getx/getx_rotas/home_page_comum.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
  

@@ -22,7 +22,7 @@ class HomeMenu extends StatelessWidget {
             ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
               onPressed: () {
-                Get.toNamed('/pageinexistente');
+                Get.toNamed('/envioArgumentsPage');
               },
               child: const Text('Enviando Arguments'),
             ),

@@ -1,4 +1,4 @@
-import 'package:about_getx/getx_rotas/rotas_nomeadas/pages/inicial/page_nomeada_um.dart';
+import 'package:about_getx/getx_rotas/rotas_nomeadas/pages/basica/page_nomeada_um.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

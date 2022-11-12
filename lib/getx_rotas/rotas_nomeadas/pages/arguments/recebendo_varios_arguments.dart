@@ -14,13 +14,12 @@ class RecebendoVariosArguments extends StatelessWidget {
       ),
       body: Column(
         children: [
+          //1 formar de pegar os arguments
           Text(variosArguments.elementAt(0).name),
           Text(variosArguments.elementAt(0).email),
           Text(variosArguments.elementAt(1)),
           Text(variosArguments.elementAt(2).toString()),
-          Text(
-            variosArguments.elementAt(3).elementAt(0),
-          ),
+          Text(variosArguments.elementAt(3).elementAt(0)),
         ],
       ),
     );

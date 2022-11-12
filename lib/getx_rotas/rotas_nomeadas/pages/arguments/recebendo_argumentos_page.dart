@@ -5,7 +5,8 @@ import 'envio_arguments_page.dart';
 
 // ignore: must_be_immutable
 class RecebendoArgumentosPage extends StatelessWidget {
-  RecebendoArgumentosPage({Key? key}) : super(key: key);
+  // final Nome nome;
+  RecebendoArgumentosPage({Key? key,}) : super(key: key);
 
   Nome arguments = Get.arguments;
 

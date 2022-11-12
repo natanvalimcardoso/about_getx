@@ -21,6 +21,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      routingCallback: (Routing? routing) {
+        debugPrint(routing?.current);
+        debugPrint(routing?.previous);
+        //FOR ARGUMENTS
+        debugPrint(routing?.args.toString());
+      },
       getPages: [
         GetPage(name: '/', page: () => const HomeMenu()),
         GetPage(name: '/page_nomeada_um', page: () => const PageNomeadaUm()),
@@ -30,10 +36,11 @@ class MyApp extends StatelessWidget {
         //* Forma Hierarquica, onde a rota principal é a raiz e as outras são filhas
         //* Seria o mesmo que criasse: /envioArgumentsPage/recebendoArgumentosPage
         GetPage(
-          name: '/envioArgumentsPage', page: () => EnvioArgumentsPage(),
+          name: '/envioArgumentsPage',
+          page: () => EnvioArgumentsPage(),
           children: [
             GetPage(name: '/recebendoArgumentosPage', page: () => RecebendoArgumentosPage()),
-            GetPage(name: '/recebendoVariosArguments', page: () =>  RecebendoVariosArguments())
+            GetPage(name: '/recebendoVariosArguments', page: () => RecebendoVariosArguments())
           ],
         ),
       ],

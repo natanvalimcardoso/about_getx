@@ -25,10 +25,17 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(name: '/', page: () => const HomeMenu()),
         GetPage(name: '/page_nomeada_um', page: () => const PageNomeadaUm()),
-        GetPage(name: '/envioArgumentsPage', page: () => const EnvioArgumentsPage()),
-        GetPage(name: '/recebendoArgumentosPage', page: () => const RecebendoArgumentosPage()),
-        GetPage(name: '/recebendoPathArgumentsPage', page: () => const RecebendoPathArgumentsPage()),
-        GetPage(name: '/recebendoQueryArgumentsPage', page: () => const RecebendoQueryArgumentsPage()),
+
+        //* Ele da possibilidade de criar um children para a rota, para assim concatenar com a rota principal
+        //* Forma Hierarquica, onde a rota principal é a raiz e as outras são filhas
+        //* Seria o mesmo que criasse: /envioArgumentsPage/recebendoArgumentosPage
+        GetPage( name: '/envioArgumentsPage', page: () =>  EnvioArgumentsPage(),
+          children: [
+            GetPage(name: '/recebendoArgumentosPage', page: () =>  RecebendoArgumentosPage()),
+            GetPage(name: '/recebendoQueryArgumentsPage', page: () => const RecebendoQueryArgumentsPage()),
+            GetPage(name: '/recebendoPathArgumentsPage', page: () => const RecebendoPathArgumentsPage())
+          ],
+        ),
       ],
     );
   }

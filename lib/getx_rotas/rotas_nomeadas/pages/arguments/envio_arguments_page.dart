@@ -29,6 +29,7 @@ class EnvioArgumentsPage extends StatelessWidget {
             ElevatedButton(
               child: const Text('Arguments'),
               onPressed: () {
+                //Forma normal de utilizar
                 Get.toNamed(
                   '/envioArgumentsPage/recebendoArgumentosPage',
                   arguments: nome,
@@ -36,12 +37,18 @@ class EnvioArgumentsPage extends StatelessWidget {
               },
             ),
             ElevatedButton(
-              child: const Text('Path Parameters'),
-              onPressed: () {},
-            ),
-            ElevatedButton(
-              child: const Text('Query Parameters'),
-              onPressed: () {},
+              child: const Text('Vários Arguments'),
+              onPressed: () {
+                Get.toNamed(
+                  '/envioArgumentsPage/recebendoVariosArguments',
+                  arguments: {
+                    nome,
+                    'Stringo normal',
+                    2001,
+                    ['natan', 'teste', 'ual']
+                  },
+                );
+              },
             ),
           ],
         ),

@@ -20,6 +20,9 @@ class RecebendoVariosArguments extends StatelessWidget {
           Text(variosArguments.elementAt(1)),
           Text(variosArguments.elementAt(2).toString()),
           Text(variosArguments.elementAt(3).elementAt(0)),
+          //* Há outras formas de pegar os argumentS, Como por exemplo:
+          //* Passar por parâmetro no construtor da classe
+          //* Por Map. etc... 
         ],
       ),
     );

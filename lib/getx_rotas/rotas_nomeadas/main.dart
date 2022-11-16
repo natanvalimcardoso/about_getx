@@ -1,3 +1,4 @@
+import 'package:about_getx/getx_rotas/rotas_nomeadas/pages/middlewares/route_middlewares.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -46,9 +47,9 @@ class MyApp extends StatelessWidget {
          GetPage(
           name: '/MiddlewaresHomePage',
           page: () => const MiddlewaresHomePage(),
-          children: [
-
-          ],
+          middlewares: [
+            RouteMiddlewares()
+          ]
         ),
       ],
     );

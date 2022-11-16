@@ -10,11 +10,9 @@ class MiddlewaresHomePage extends StatelessWidget {
         title: const Text('Middlewares - HOME'),
       ),
       body: Center(
-        child: Column(
-          children: [
-            Container(),
-            Container(),
-          ],
+        child:ElevatedButton(
+          child: const Text('Indo pra outra pagina'),
+          onPressed: () {},
         ),
       ),
     );

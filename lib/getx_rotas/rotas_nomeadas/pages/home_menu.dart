@@ -33,6 +33,13 @@ class HomeMenu extends StatelessWidget {
               },
               child: const Text('Middlewares Home'),
             ),
+             ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
+              onPressed: () {
+                Get.toNamed('/HomeNestedNavigationPage');
+              },
+              child: const Text('Nested Navigation'),
+            ),
           ],
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:about_getx/getx_rotas/rotas_nomeadas/pages/middlewares/route_middlewares.dart';
+import 'package:about_getx/getx_rotas/rotas_nomeadas/pages/nested_navigation/home_nested_navigation_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -44,14 +45,16 @@ class MyApp extends StatelessWidget {
             GetPage(name: '/recebendoVariosArguments', page: () => RecebendoVariosArguments())
           ],
         ),
-         GetPage(
+        GetPage(
           name: '/MiddlewaresHomePage',
           page: () => const MiddlewaresHomePage(),
           middlewares: [
-            RouteMiddlewares()
-          ]
+            RouteMiddlewares(),
+          ],
         ),
+
+        GetPage(name: '/HomeNestedNavigationPage', page: () =>  HomeNestedNavigationPage()),
       ],
     );
   }
-} 
+}

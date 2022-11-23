@@ -13,6 +13,7 @@ class HomeMenu extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+
             ElevatedButton(
               child: const Text('Page nomeada um'),
               onPressed: () {
@@ -26,14 +27,14 @@ class HomeMenu extends StatelessWidget {
               },
               child: const Text('Enviando Arguments'),
             ),
-             ElevatedButton(
+            ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
               onPressed: () {
                 Get.toNamed('/MiddlewaresHomePage');
               },
               child: const Text('Middlewares Home'),
             ),
-             ElevatedButton(
+            ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
               onPressed: () {
                 Get.toNamed('/HomeNestedNavigationPage');

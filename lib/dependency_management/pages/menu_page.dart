@@ -19,6 +19,12 @@ class MenuPage extends StatelessWidget {
                 Navigator.of(context).pushNamed('/basico');
               },
             ),
+            ElevatedButton(
+              child: const Text('Put, Permanent, Tag'),
+              onPressed: () {
+                Navigator.of(context).pushNamed('/metodosMenu');
+              },
+            ),
           ],
         ),
       ),

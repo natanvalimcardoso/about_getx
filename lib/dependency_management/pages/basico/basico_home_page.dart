@@ -6,8 +6,7 @@ import 'package:get/get_connect/http/src/utils/utils.dart';
 class BasicoHomePage extends StatelessWidget {
   BasicoHomePage({Key? key}) : super(key: key);
 
-  final controller = Get.put(
-      BasicoController()); //Forma mais basica de possuir uma controller que possa ser utilizado em outros lugares
+  final controller = Get.put(BasicoController()); //Forma mais basica de possuir uma controller que possa ser utilizado em outros lugares
 
   @override
   Widget build(BuildContext context) {

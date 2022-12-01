@@ -1,4 +1,5 @@
-import 'package:about_getx/dependency_management/pages/metodos/metodos_menu.dart';
+import 'package:about_getx/dependency_management/pages/metodos/metodos_home.dart';
+import 'package:about_getx/dependency_management/pages/metodos/put/put_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,7 +19,13 @@ class MainApp extends StatelessWidget {
       getPages: [
         GetPage(name: '/', page: () => const MenuPage()),
         GetPage(name: '/basico', page: () => BasicoHomePage()),
-        GetPage(name: '/metodosMenu', page: () => const MetodosMenu()),
+        GetPage(
+          name: '/metodosMenu',
+          page: () => const MetodosHome(),
+          children: [
+            GetPage(name: '/put', page: () => const PutPage()),
+          ],
+        ),
       ],
     );
   }

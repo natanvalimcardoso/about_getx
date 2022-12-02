@@ -1,4 +1,3 @@
-import 'package:about_getx/dependency_management/main_app.dart';
 import 'package:flutter/material.dart';
 
 class MetodosHome extends StatelessWidget {
@@ -6,6 +5,7 @@ class MetodosHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: const Text('Métodos-Home'),
@@ -18,6 +18,12 @@ class MetodosHome extends StatelessWidget {
               child: const Text('Put - metodo'),
               onPressed: () {
                 Navigator.of(context).pushNamed('/metodosMenu/put');
+              },
+            ),
+            ElevatedButton(
+              child: const Text('LazyPut - metodo'),
+              onPressed: () {
+                Navigator.of(context).pushNamed('/metodosMenu/lazyPut');
               },
             ),
           ],

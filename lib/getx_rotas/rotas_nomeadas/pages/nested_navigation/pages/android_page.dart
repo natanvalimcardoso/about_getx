@@ -12,6 +12,5 @@ class AndroidPage extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }

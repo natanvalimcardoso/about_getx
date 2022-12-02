@@ -41,6 +41,8 @@ class HomeNestedNavigationPage extends StatelessWidget {
         key: Get.nestedKey(1),
         initialRoute: '/',
         onGenerateRoute: (settings) {
+          return null;
+        
           // Widget page;
           // Transition transition = Transition.cupertino;
 

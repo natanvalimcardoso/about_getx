@@ -1,7 +1,6 @@
 import 'package:about_getx/dependency_management/pages/basico/basico_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
 class BasicoHomePage extends StatelessWidget {
   BasicoHomePage({Key? key}) : super(key: key);
@@ -38,7 +37,7 @@ class BasicoHomePage extends StatelessWidget {
                 controller.alterarNome('Natan valim Cardoso');
               },
             ),
-            InformacaoHomePage()
+            const InformacaoHomePage()
           ],
         ),
       ),
@@ -57,7 +56,7 @@ class InformacaoHomePage extends StatelessWidget {
       padding: const EdgeInsets.only(top: 50),
       child: Column(
         children: [
-          Text('Widget Interno'),
+          const Text('Widget Interno'),
           ElevatedButton(
             child: const Text('Button label'),
             onPressed: () {

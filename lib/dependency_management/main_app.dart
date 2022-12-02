@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 
 import 'pages/basico/basico_home_page.dart';
 import 'pages/menu_page.dart';
+import 'pages/metodos/lazyput/lazy_put.dart';
 
 void main() {
   runApp(const MainApp());
@@ -24,6 +25,7 @@ class MainApp extends StatelessWidget {
           page: () => const MetodosHome(),
           children: [
             GetPage(name: '/put', page: () => const PutPage()),
+            GetPage(name: '/lazyPut', page: () =>  LazyPut()),
           ],
         ),
       ],

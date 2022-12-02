@@ -25,6 +25,15 @@ class _PutPageState extends State<PutPage> {
               children: [
                 Text('Time put: ${controller.timeStamp}'),
                 Text('Time put permanent: ${controller2.timeStamp}'),
+                Text('Nome: ${controller2.name}'),
+                ElevatedButton(
+                  child: const Text('Salvar nome com instancia'),
+                  onPressed: () {
+                    setState(() {
+                      controller2.name = 'Salvado';
+                    });
+                  },
+                ),
               ],
             ),
            ),

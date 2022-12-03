@@ -23,7 +23,12 @@ class MenuPage extends StatelessWidget {
               child: const Text('Put, Permanent, Tag'),
               onPressed: () {
                 Navigator.of(context).pushNamed('/metodosMenu');  
-                   
+              },
+            ),
+             ElevatedButton(
+              child: const Text('Bindings - nomeado'),
+              onPressed: () {
+                Navigator.of(context).pushNamed('/bindinds');
               },
             ),
           ],

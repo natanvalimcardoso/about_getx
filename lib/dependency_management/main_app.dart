@@ -1,3 +1,5 @@
+import 'package:about_getx/dependency_management/pages/bindings/bindings_example.dart';
+import 'package:about_getx/dependency_management/pages/bindings/home_bindings.dart';
 import 'package:about_getx/dependency_management/pages/metodos/metodos_home.dart';
 import 'package:about_getx/dependency_management/pages/metodos/put/put_page.dart';
 import 'package:flutter/material.dart';
@@ -25,9 +27,14 @@ class MainApp extends StatelessWidget {
           page: () => const MetodosHome(),
           children: [
             GetPage(name: '/put', page: () => const PutPage()),
-            GetPage(name: '/lazyPut', page: () =>  LazyPut()),
+            GetPage(name: '/lazyPut', page: () => LazyPut()),
           ],
         ),
+        GetPage(
+          name: '/bindinds',
+          page: () => const HomeBindings(),
+          binding: BindingsExample()
+        )
       ],
     );
   }

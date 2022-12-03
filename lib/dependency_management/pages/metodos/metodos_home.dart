@@ -26,6 +26,7 @@ class MetodosHome extends StatelessWidget {
                 Navigator.of(context).pushNamed('/metodosMenu/lazyPut');
               },
             ),
+           
           ],
         ),
       ),
